@@ -18,7 +18,7 @@ def mask_account_card(info: str) -> str:
         ValueError: Если передан некорректный формат данных.
     """
     if not info or not isinstance(info, str):
-        raise ValueError("Некорректный ввод: ожидается непустая строка")
+        raise ValueError("Некорректный ввод: ожидается не пустая строка")
 
     # Обработка счета
     if info.startswith("Счет"):
