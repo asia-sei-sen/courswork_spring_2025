@@ -30,7 +30,7 @@ executed_transactions = processing.filter_by_state(transactions_list)
 sorted_trans = processing.sort_by_date(transactions_list)
 
 ## Авторы:
-- Ваше имя <sei_senagon@yahoo.com>
+- ASIA <sei_senagon@yahoo.com>
 
 ## Лицензия:
-MIT License
+MIT License 
