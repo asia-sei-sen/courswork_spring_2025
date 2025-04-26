@@ -8,12 +8,68 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 
+[tool.poetry.dependencies]
+python = "^3.13"  # Явно указываем поддержку Python 3.13
+
+[tool.poetry.group.dev.dependencies]
+# Современные версии линтеров для Python 3.13
+black = "^24.4.0"       # Последняя стабильная версия
+isort = "^5.13.2"       # Поддержка Python 3.13
+flake8 = "^7.0.0"       # Совместимость с новыми Python
+pylint = "^3.1.0"       # Версия для Python 3.13
+mypy = "^1.10.0"        # Актуальная версия type checker
+ruff = "^0.4.4"         # Современный быстрый линтер
+pre-commit = "^3.7.0"   # Для git hooks
+
 [tool.black]
 line-length = 120
+target-version = ["py313"]
+skip-string-normalization = true
+preview = true  # Включаем новые возможности Black
 
 [tool.isort]
 profile = "black"
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = true
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+known_first_party = ["pythonproject4"]
 
 [tool.flake8]
 max-line-length = 120
-ignore = "E203,W503,E501,W292"
+ignore = "E203,W503,E501"
+select = "E,F,W,C,B"
+max-complexity = 15
+per-file-ignores = [
+    "__init__.py:F401",
+    "tests/*:D,S101"
+]
+
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-few-public-methods",
+    "too-many-arguments"
+]
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+strict_equality = true
+
+[tool.ruff]
+line-length = 120
+select = [
+    "E", "F", "W",  # Базовые проверки
+    "B",   # Проверки багов
+    "I",   # Правила импортов
+    "UP",  # Современный синтаксис Python
+]
+ignore = ["E203", "E501"]

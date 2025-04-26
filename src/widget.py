@@ -1,6 +1,6 @@
-from datetime import datetime
 import re
-from .mask import mask_credit_card, mask_account_number  # Изменён импорт
+from datetime import datetime
+from masks import mask_account_number, mask_credit_card
 
 
 def get_date(date_str: str) -> str:
@@ -14,7 +14,13 @@ def get_date(date_str: str) -> str:
 
 def mask_account_card(info: str) -> str:
     """
-    Маскирует номер карты или счета (полная реализация остаётся здесь).
+    Маскирует номер карты или счета.
+
+    Args:
+        info: Строка формата "Visa Platinum 7000792289606361" или "Счет 73654108430135874305".
+
+    Returns:
+        Строка с маскированным номером карты/счета.
     """
     if not info or not isinstance(info, str):
         raise ValueError("Некорректный ввод: ожидается не пустая строка")
