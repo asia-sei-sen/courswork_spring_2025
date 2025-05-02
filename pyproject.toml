@@ -6,10 +6,11 @@ build-backend = "poetry.core.masonry.api"
 name = "pythonproject4"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["ASIA_K  <sei_senagon@yahoo.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.13"  # Явно указываем поддержку Python 3.13
+pytest = "^8.3"
 
 [tool.poetry.group.dev.dependencies]
 # Современные версии линтеров для Python 3.13
@@ -73,3 +74,5 @@ select = [
     "UP",  # Современный синтаксис Python
 ]
 ignore = ["E203", "E501"]
+
+
