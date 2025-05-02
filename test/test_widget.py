@@ -16,6 +16,7 @@ def valid_case(request):
     ("Visa Platinum invalid", "Некорректный формат карты"),
     ("Unknown Card 1234567890123456", "Некорректный формат карты"),
     ("Счет без номера", "Некорректный формат счета"),
+    ("Visa Platinum !@#$%^&*()", "Некорректный формат карты"),  # Специальные символы
 ])
 def invalid_case(request):
     return request.param
@@ -35,3 +36,10 @@ def test_name_preservation():
     """Дополнительный тест на сохранение названия"""
     result = mask_account_card("Visa Platinum 7000792289606361")
     assert "Visa Platinum" in result
+
+# Новые тесты для дополнительных случаев
+def test_edge_cases():
+    """Тест граничных случаев."""
+    assert mask_account_card("12345678901234567890") == "Некорректный ввод"  # Слишком длинный номер
+    assert mask_account_card("123") == "Некорректный ввод"  # Слишком короткий номер
+    assert mask_account_card("Visa Platinum ") == "Некорректный ввод"  # Пробел в конце
