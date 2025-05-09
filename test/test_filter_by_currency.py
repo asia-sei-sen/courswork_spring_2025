@@ -149,5 +149,6 @@ def test_full_coverage():
     ]
     assert len(list(transaction_descriptions(complex_transactions))) == 3
 
+
     # Проверка card_number_generator с граничными значениями
     assert next(card_number_generator(0, 0)) == "0000 0000 0000 0000"
