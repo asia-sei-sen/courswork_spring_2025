@@ -1,6 +1,6 @@
 import re
 from datetime import datetime
-from masks import mask_account_number, mask_credit_card
+from src.masks import mask_account_number, mask_credit_card
 
 
 def get_date(date_str: str) -> str:
@@ -38,6 +38,12 @@ def mask_account_card(info: str) -> str:
         raise ValueError("Некорректный формат карты")
 
     card_number = match.group(1).replace(" ", "")
+
+    # Проверка на длину номера карты
+    if len(card_number) != 16:
+        raise ValueError("Некорректный номер карты")
+
     card_name = info[: match.start()].strip()
     masked = mask_credit_card(card_number)
+
     return f"{card_name} {masked}"
