@@ -54,6 +54,7 @@ pytest --cov=src --cov-report=term-missing
 
 # Генератор банковских данных
 
+
 Проект для генерации тестовых данных банковских операций:
 
 ## Функционал
@@ -83,7 +84,7 @@ pytest test/
 ```
 
 ## Авторы:
-- ASIA_K <sei_senagon@yahoo.com>
+- ASIA_K <sei_senagon@yahoo.com>111
 
 ## Лицензия:
 MIT License
