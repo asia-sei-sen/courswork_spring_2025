@@ -5,7 +5,7 @@ from typing import (
     Dict,
     List,
 )
-
+from decorators.log import processing_logger
 
 def filter_by_state(transactions: List[Dict], state: str = 'EXECUTED') -> List[Dict]:
     """

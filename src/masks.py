@@ -1,3 +1,5 @@
+from decorators.log import mask_logger
+
 def mask_credit_card(card_number: str) -> str:
     """Маскирует номер кредитной карты, оставляя первые 6 и последние 4 цифры."""
     card_number = card_number.replace(" ", "")
