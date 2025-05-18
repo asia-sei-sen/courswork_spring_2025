@@ -53,7 +53,7 @@ pytest test/ -v
 pytest --cov=src --cov-report=term-missing
 
 ## Авторы:
-- ASIA_K <sei_senagon@yahoo.com>
+- ASIA_K <sei_senagon@yahoo.com>11
 
 ## Лицензия:
 MIT License
