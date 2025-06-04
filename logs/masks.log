@@ -1,22 +1,24 @@
-2025-06-01 23:51:30,259 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,261 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,262 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
-2025-06-01 23:51:30,283 | masks | INFO | mask_account_number успешно выполнена.
-2025-06-01 23:51:30,283 | masks | INFO | mask_account_number успешно выполнена.
-2025-06-01 23:51:30,283 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
-2025-06-01 23:51:30,302 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
-2025-06-01 23:51:30,338 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
-2025-06-01 23:51:30,372 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,375 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,378 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
-2025-06-01 23:51:30,396 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
-2025-06-01 23:51:30,413 | masks | INFO | mask_account_number успешно выполнена.
-2025-06-01 23:51:30,416 | masks | INFO | mask_account_number успешно выполнена.
-2025-06-01 23:51:30,419 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
-2025-06-01 23:51:30,436 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
-2025-06-01 23:51:30,513 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,517 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,520 | masks | INFO | mask_account_number успешно выполнена.
-2025-06-01 23:51:30,529 | masks | INFO | mask_credit_card успешно выполнена.
-2025-06-01 23:51:30,545 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
-2025-06-01 23:51:30,571 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,863 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:10,866 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,874 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,874 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,874 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
+2025-06-04 22:00:10,894 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:10,894 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:10,894 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
+2025-06-04 22:00:10,912 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
+2025-06-04 22:00:10,930 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
+2025-06-04 22:00:10,948 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,951 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:10,954 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
+2025-06-04 22:00:10,972 | masks | ERROR | mask_credit_card завершилась с ошибкой: Некорректный номер карты
+2025-06-04 22:00:10,990 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:10,993 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:10,997 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
+2025-06-04 22:00:11,015 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
+2025-06-04 22:00:11,094 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:11,097 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:11,101 | masks | INFO | mask_account_number успешно выполнена.
+2025-06-04 22:00:11,111 | masks | INFO | mask_credit_card успешно выполнена.
+2025-06-04 22:00:11,127 | masks | ERROR | mask_account_number завершилась с ошибкой: Некорректный номер счета
+2025-06-04 22:00:11,153 | masks | INFO | mask_credit_card успешно выполнена.

@@ -40,3 +40,31 @@
 [2025-06-01 23:51:30.253963] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}, {'operationAmount': {'currency': {'code': 'EUR'}}, 'description': 'Payment 2'}], 'RUB'), kwargs: {}, result: <generator object filter_by_currency at 0x000001927D8D8AD0>
 [2025-06-01 23:51:30.254501] transaction_descriptions ok | args: ([{'description': 'Перевод'}, {'description': 'Оплата'}, {'description': None}],), kwargs: {}, result: <generator object transaction_descriptions at 0x000001927D8D8AD0>
 [2025-06-01 23:51:30.255447] card_number_generator ok | args: (0, 0), kwargs: {}, result: <generator object card_number_generator at 0x000001927DC43AE0>
+[2025-06-04 21:49:13.378179] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}, {'operationAmount': {'currency': {'code': 'EUR'}}, 'description': 'Payment 2'}], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x000001A38401B1D0>
+[2025-06-04 21:49:13.382619] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}], 'EUR'), kwargs: {}, result: <generator object filter_by_currency at 0x000001A384018A00>
+[2025-06-04 21:49:13.386234] filter_by_currency ok | args: ([], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x000001A38401ACF0>
+[2025-06-04 21:49:13.389346] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}}], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x000001A38401B1D0>
+[2025-06-04 21:49:13.392483] transaction_descriptions ok | args: ([{'description': 'Payment 1'}, {'description': 'Payment 2'}, {'description': 'Payment 3'}],), kwargs: {}, result: <generator object transaction_descriptions at 0x000001A384018A00>
+[2025-06-04 21:49:13.395678] transaction_descriptions ok | args: ([],), kwargs: {}, result: <generator object transaction_descriptions at 0x000001A38401ACF0>
+[2025-06-04 21:49:13.398997] transaction_descriptions ok | args: ([{'description': 'Test'}],), kwargs: {}, result: <generator object transaction_descriptions at 0x000001A38401B1D0>
+[2025-06-04 21:49:13.402575] card_number_generator ok | args: (1, 1), kwargs: {}, result: <generator object card_number_generator at 0x000001A384387A00>
+[2025-06-04 21:49:13.405973] card_number_generator ok | args: (9999999999999998, 9999999999999999), kwargs: {}, result: <generator object card_number_generator at 0x000001A384387A00>
+[2025-06-04 21:49:13.409174] card_number_generator ok | args: (5, 3), kwargs: {}, result: <generator object card_number_generator at 0x000001A384387A00>
+[2025-06-04 21:49:13.412213] card_number_generator ok | args: (1, 1), kwargs: {}, result: <generator object card_number_generator at 0x000001A384387A00>
+[2025-06-04 21:49:13.415315] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}, {'operationAmount': {'currency': {'code': 'EUR'}}, 'description': 'Payment 2'}], 'RUB'), kwargs: {}, result: <generator object filter_by_currency at 0x000001A38401ACF0>
+[2025-06-04 21:49:13.415843] transaction_descriptions ok | args: ([{'description': 'Перевод'}, {'description': 'Оплата'}, {'description': None}],), kwargs: {}, result: <generator object transaction_descriptions at 0x000001A38401ACF0>
+[2025-06-04 21:49:13.416437] card_number_generator ok | args: (0, 0), kwargs: {}, result: <generator object card_number_generator at 0x000001A384387A00>
+[2025-06-04 22:00:10.806751] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}, {'operationAmount': {'currency': {'code': 'EUR'}}, 'description': 'Payment 2'}], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x0000014C07EB64D0>
+[2025-06-04 22:00:10.810162] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}], 'EUR'), kwargs: {}, result: <generator object filter_by_currency at 0x0000014C07EB7780>
+[2025-06-04 22:00:10.813548] filter_by_currency ok | args: ([], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x0000014C07EB5560>
+[2025-06-04 22:00:10.816840] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}}], 'USD'), kwargs: {}, result: <generator object filter_by_currency at 0x0000014C07EB64D0>
+[2025-06-04 22:00:10.820417] transaction_descriptions ok | args: ([{'description': 'Payment 1'}, {'description': 'Payment 2'}, {'description': 'Payment 3'}],), kwargs: {}, result: <generator object transaction_descriptions at 0x0000014C07EB7780>
+[2025-06-04 22:00:10.823945] transaction_descriptions ok | args: ([],), kwargs: {}, result: <generator object transaction_descriptions at 0x0000014C07EB5560>
+[2025-06-04 22:00:10.827403] transaction_descriptions ok | args: ([{'description': 'Test'}],), kwargs: {}, result: <generator object transaction_descriptions at 0x0000014C07EB64D0>
+[2025-06-04 22:00:10.830707] card_number_generator ok | args: (1, 1), kwargs: {}, result: <generator object card_number_generator at 0x0000014C0822BE60>
+[2025-06-04 22:00:10.833966] card_number_generator ok | args: (9999999999999998, 9999999999999999), kwargs: {}, result: <generator object card_number_generator at 0x0000014C0822BE60>
+[2025-06-04 22:00:10.837055] card_number_generator ok | args: (5, 3), kwargs: {}, result: <generator object card_number_generator at 0x0000014C0822BE60>
+[2025-06-04 22:00:10.840304] card_number_generator ok | args: (1, 1), kwargs: {}, result: <generator object card_number_generator at 0x0000014C0822BE60>
+[2025-06-04 22:00:10.843563] filter_by_currency ok | args: ([{'operationAmount': {'currency': {'code': 'USD'}}, 'description': 'Payment 1'}, {'operationAmount': {'currency': {'code': 'EUR'}}, 'description': 'Payment 2'}], 'RUB'), kwargs: {}, result: <generator object filter_by_currency at 0x0000014C07EB5560>
+[2025-06-04 22:00:10.844115] transaction_descriptions ok | args: ([{'description': 'Перевод'}, {'description': 'Оплата'}, {'description': None}],), kwargs: {}, result: <generator object transaction_descriptions at 0x0000014C07EB5560>
+[2025-06-04 22:00:10.844641] card_number_generator ok | args: (0, 0), kwargs: {}, result: <generator object card_number_generator at 0x0000014C0822BE60>
