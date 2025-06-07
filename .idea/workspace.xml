@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78c76465-3933-46a9-ab6c-4af7d345056e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.flake8" beforeDir="false" afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/masks.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/utils.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_parsers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_parsers/csv_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_parsers/excel_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.egg-info/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/transactions.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/transactions_excel.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_csv_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_decorator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_excel_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_external_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_filter_by_currency.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_masks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_widget.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "asia-sei-sen"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/asia-sei-sen/courswork_spring_2025.git",
+    "accountId": "0b312a78-ae5f-4521-b989-2f73530fbae6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2yAexoaEscN53GoUi4KGT0eI59D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Asia/PycharmProjects/coursework_spring_2025"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78c76465-3933-46a9-ab6c-4af7d345056e" name="Changes" comment="" />
+      <created>1749282053913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749282053913</updated>
+    </task>
+    <servers />
+  </component>
+</project>
