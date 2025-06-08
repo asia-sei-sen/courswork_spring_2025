@@ -6,10 +6,10 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 def read_transactions_from_excel(file_path: str):
     try:
         df = pd.read_excel(file_path, engine='openpyxl')
-        # Проверяем, что в файле есть необходимые колонки
         required_cols = {'date', 'amount'}
         if not required_cols.issubset(df.columns):
             missing = required_cols - set(df.columns)
@@ -20,6 +20,7 @@ def read_transactions_from_excel(file_path: str):
     except Exception as e:
         logger.error(f"Ошибка чтения файла Excel: {e}")
         return []
+
 
 def investkopilka(month: str, transactions: list, round_limit: int):
     logger.info(f"Start investkopilka for month: {month}, round_limit: {round_limit}")
@@ -43,8 +44,14 @@ def investkopilka(month: str, transactions: list, round_limit: int):
             "total_round_up": total_round
         }
         logger.info("Investkopilka calculation finished")
-        return json.dumps(result)
+        return json.dumps(result, ensure_ascii=False, indent=2)
 
     except Exception as e:
         logger.error(f"Error in investkopilka: {e}")
         return json.dumps({"error": str(e)})
+
+
+
+def run_invest_savings(file_path: str, month: str, round_limit: int) -> str:
+    transactions = read_transactions_from_excel(file_path)
+    return investkopilka(month, transactions, round_limit)
