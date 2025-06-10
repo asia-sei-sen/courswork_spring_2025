@@ -1,11 +1,12 @@
 from datetime import datetime
 from unittest.mock import patch
+
 from src.utils import (
-    get_greeting,
     get_card_summary,
-    get_top_transactions,
     get_currency_rates,
+    get_greeting,
     get_stock_prices,
+    get_top_transactions,
     prepare_main_page_response,
 )
 

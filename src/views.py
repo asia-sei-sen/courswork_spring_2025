@@ -2,7 +2,7 @@ import json
 import logging
 from datetime import datetime
 
-from utils import get_greeting, get_card_summary, get_top_transactions, get_currency_rates, get_stock_prices
+from utils import get_card_summary, get_currency_rates, get_greeting, get_stock_prices, get_top_transactions
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

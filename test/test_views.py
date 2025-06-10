@@ -1,5 +1,6 @@
-from views import main_page_view
 import json
+
+from views import main_page_view
 
 
 def test_main_page_view():

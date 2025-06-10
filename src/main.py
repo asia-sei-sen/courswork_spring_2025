@@ -1,11 +1,11 @@
 import logging
 from datetime import datetime
 
-from invest_savings import run_invest_savings
-from views import main_page_view
-from reports import spending_by_weekday
 import pandas as pd
 
+from invest_savings import run_invest_savings
+from reports import spending_by_weekday
+from views import main_page_view
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

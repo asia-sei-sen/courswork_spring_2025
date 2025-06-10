@@ -1,8 +1,9 @@
 import json
 import logging
 from datetime import datetime, time
-import requests
+
 import pandas as pd
+import requests
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

@@ -1,9 +1,10 @@
-import os
 import json
-import pytest
-import pandas as pd
-from src.invest_savings import read_transactions_from_excel, investkopilka, run_invest_savings
+import os
 
+import pandas as pd
+import pytest
+
+from src.invest_savings import investkopilka, read_transactions_from_excel, run_invest_savings
 
 EXCEL_FILE_PATH = os.path.join(os.path.dirname(__file__), "../data/operations.xlsx")
 

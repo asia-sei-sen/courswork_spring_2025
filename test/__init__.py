@@ -1,7 +1,7 @@
 # tests/__init__.py
 
-import sys
 import os
+import sys
 
 SRC_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
 if SRC_PATH not in sys.path:

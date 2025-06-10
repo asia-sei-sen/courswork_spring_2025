@@ -1,6 +1,8 @@
-import pandas as pd
-from src.reports import spending_by_weekday
 import json
+
+import pandas as pd
+
+from src.reports import spending_by_weekday
 
 
 def test_spending_by_weekday_returns_correct_json():
