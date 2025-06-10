@@ -4,7 +4,7 @@ import json
 
 def read_transactions_from_excel(path):
     try:
-        df = pd.read_excel(path, engine='openpyxl')
+        df = pd.read_excel(path, engine="openpyxl")
         if not {"date", "amount"}.issubset(df.columns):
             return []
         transactions = df[["date", "amount"]].to_dict(orient="records")
@@ -26,11 +26,7 @@ def investkopilka(month, transactions, round_limit):
                 amount = float(t.get("amount", 0))
                 round_up = round_limit - (amount % round_limit) if amount % round_limit != 0 else 0
                 total_round_up += round_up
-        result = {
-            "month": month,
-            "round_limit": round_limit,
-            "total_round_up": round(total_round_up, 2)
-        }
+        result = {"month": month, "round_limit": round_limit, "total_round_up": round(total_round_up, 2)}
         return json.dumps(result)
     except Exception as e:
         return json.dumps({"error": str(e)})

@@ -2,14 +2,10 @@ import os
 import json
 import pytest
 import pandas as pd
-from src.invest_savings import (
-    read_transactions_from_excel,
-    investkopilka,
-    run_invest_savings
-)
+from src.invest_savings import read_transactions_from_excel, investkopilka, run_invest_savings
 
 
-EXCEL_FILE_PATH = os.path.join(os.path.dirname(__file__), '../data/operations.xlsx')
+EXCEL_FILE_PATH = os.path.join(os.path.dirname(__file__), "../data/operations.xlsx")
 
 
 @pytest.fixture
@@ -17,7 +13,7 @@ def sample_transactions():
     return [
         {"date": "2025-05-01", "amount": 100.50},
         {"date": "2025-05-02", "amount": 200.75},
-        {"date": "2025-05-03", "amount": 300.00}
+        {"date": "2025-05-03", "amount": 300.00},
     ]
 
 
@@ -42,10 +38,7 @@ def test_run_with_real_excel_file():
 
 
 def test_read_transactions_success(tmp_path):
-    df = pd.DataFrame({
-        "date": ["2025-05-01", "2025-05-15"],
-        "amount": [100.0, 150.5]
-    })
+    df = pd.DataFrame({"date": ["2025-05-01", "2025-05-15"], "amount": [100.0, 150.5]})
     test_file = tmp_path / "test.xlsx"
     df.to_excel(test_file, index=False)
 
@@ -82,10 +75,7 @@ def test_investkopilka_invalid_data():
 
 
 def test_run_invest_savings_success(tmp_path):
-    df = pd.DataFrame({
-        "date": ["2025-05-01", "2025-05-02"],
-        "amount": [100.50, 200.75]
-    })
+    df = pd.DataFrame({"date": ["2025-05-01", "2025-05-02"], "amount": [100.50, 200.75]})
     test_file = tmp_path / "test_run.xlsx"
     df.to_excel(test_file, index=False)
 

@@ -2,13 +2,7 @@ import json
 import logging
 from datetime import datetime
 
-from utils import (
-    get_greeting,
-    get_card_summary,
-    get_top_transactions,
-    get_currency_rates,
-    get_stock_prices
-)
+from utils import get_greeting, get_card_summary, get_top_transactions, get_currency_rates, get_stock_prices
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -34,7 +28,7 @@ def main_page_view(input_datetime_str: str) -> str:
             "cards": card_summary,
             "top_transactions": top_transactions,
             "currency_rates": currency_rates,
-            "stock_prices": stock_prices
+            "stock_prices": stock_prices,
         }
 
         return json.dumps(response, indent=2, ensure_ascii=False)

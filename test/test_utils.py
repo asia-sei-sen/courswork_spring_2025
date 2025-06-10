@@ -113,6 +113,7 @@ def test_prepare_main_page_response(monkeypatch):
 
     response_json = prepare_main_page_response("2025-06-09 12:00:00", transactions)
     import json
+
     response = json.loads(response_json)
 
     assert "greeting" in response
@@ -128,6 +129,7 @@ def test_prepare_main_page_response_invalid_date(monkeypatch, caplog):
     monkeypatch.setattr("src.utils.get_stock_prices", lambda: {})
     response_json = prepare_main_page_response("invalid date", [])
     import json
+
     response = json.loads(response_json)
     assert "greeting" in response
     assert response["cards"] == []

@@ -34,9 +34,7 @@ def main():
     elif choice == "3":
         file_path = input("Введите путь к файлу Excel с транзакциями: ")
         category = input("Введите категорию (например, 'еда'): ")
-        date_input = input(
-            "Введите дату отсчёта (YYYY-MM-DD) или оставьте пустым для текущей: "
-        ).strip()
+        date_input = input("Введите дату отсчёта (YYYY-MM-DD) или оставьте пустым для текущей: ").strip()
 
         df = pd.read_excel(file_path, engine="openpyxl")
         start_date = datetime.strptime(date_input, "%Y-%m-%d") if date_input else None
