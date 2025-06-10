@@ -1,4 +1,3 @@
-
 from datetime import datetime
 from unittest.mock import patch
 from src.utils import (
@@ -7,7 +6,7 @@ from src.utils import (
     get_top_transactions,
     get_currency_rates,
     get_stock_prices,
-    prepare_main_page_response
+    prepare_main_page_response,
 )
 
 
@@ -36,6 +35,7 @@ def test_get_card_summary():
         assert isinstance(card["cashback"], int)
         assert card["total_spent"] > 0
 
+
 def test_get_card_summary_missing_columns(caplog):
     transactions = [{"wrong_key": 1}]
     result = get_card_summary(transactions)
@@ -56,7 +56,6 @@ def test_get_top_transactions():
     assert len(top) == 3
     amounts = [abs(t["amount"]) for t in top]
     assert amounts == sorted(amounts, reverse=True)
-    # Проверяем наличие описания, если была
     for t in top:
         assert "date" in t
         assert "amount" in t
@@ -109,7 +108,6 @@ def test_prepare_main_page_response(monkeypatch):
         {"date": "2025-06-02", "amount": -300, "description": "desc2"},
     ]
 
-    # Мокаем get_currency_rates и get_stock_prices, чтобы не делать реальные запросы
     monkeypatch.setattr("src.utils.get_currency_rates", lambda: {"USD": 74.0, "EUR": 90.0, "CNY": 11.5})
     monkeypatch.setattr("src.utils.get_stock_prices", lambda: {"AAPL": 170.33, "MSFT": 320.45})
 
@@ -126,7 +124,6 @@ def test_prepare_main_page_response(monkeypatch):
 
 
 def test_prepare_main_page_response_invalid_date(monkeypatch, caplog):
-    # При неверном формате даты должен вывестись лог и вернуться ответ с текущим временем
     monkeypatch.setattr("src.utils.get_currency_rates", lambda: {})
     monkeypatch.setattr("src.utils.get_stock_prices", lambda: {})
     response_json = prepare_main_page_response("invalid date", [])

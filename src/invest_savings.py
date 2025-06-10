@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-from datetime import datetime
+
 
 def read_transactions_from_excel(path):
     try:
@@ -15,6 +15,7 @@ def read_transactions_from_excel(path):
         return transactions
     except Exception:
         return []
+
 
 def investkopilka(month, transactions, round_limit):
     try:
@@ -33,6 +34,7 @@ def investkopilka(month, transactions, round_limit):
         return json.dumps(result)
     except Exception as e:
         return json.dumps({"error": str(e)})
+
 
 def run_invest_savings(filepath, month, round_limit):
     transactions = read_transactions_from_excel(filepath)

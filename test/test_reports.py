@@ -1,6 +1,5 @@
-import pytest
+
 import pandas as pd
-from datetime import datetime
 from src.reports import spending_by_weekday
 import json
 

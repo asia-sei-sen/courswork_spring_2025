@@ -7,6 +7,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 def get_greeting(dt: datetime) -> str:
     current_time = dt.time()
     if time(5, 0) <= current_time < time(12, 0):
@@ -17,6 +18,7 @@ def get_greeting(dt: datetime) -> str:
         return "Добрый вечер"
     else:
         return "Доброй ночи"
+
 
 def get_card_summary(transactions: list[dict]) -> list[dict]:
     df = pd.DataFrame(transactions)
@@ -37,6 +39,7 @@ def get_card_summary(transactions: list[dict]) -> list[dict]:
         })
     return result
 
+
 def get_top_transactions(transactions: list[dict], top_n=5) -> list[dict]:
     df = pd.DataFrame(transactions)
     if 'amount' not in df.columns:
@@ -47,6 +50,7 @@ def get_top_transactions(transactions: list[dict], top_n=5) -> list[dict]:
     fields = ['date', 'amount', 'description'] if 'description' in df.columns else ['date', 'amount']
     result = top_df[fields].to_dict(orient='records')
     return result
+
 
 def get_currency_rates() -> dict:
     try:
@@ -64,6 +68,7 @@ def get_currency_rates() -> dict:
         logger.error(f"Ошибка получения курсов валют: {e}")
         return {}
 
+
 def get_stock_prices() -> dict:
     prices = {
         "AAPL": 170.33,
@@ -73,6 +78,7 @@ def get_stock_prices() -> dict:
         "TSLA": 750.12,
     }
     return prices
+
 
 def prepare_main_page_response(dt_str: str, transactions: list[dict]) -> str:
     try:

@@ -1,6 +1,7 @@
 from views import main_page_view
 import json
 
+
 def test_main_page_view():
     input_date = "2025-06-07 09:30:00"
     result_json = main_page_view(input_date)

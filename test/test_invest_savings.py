@@ -8,7 +8,9 @@ from src.invest_savings import (
     run_invest_savings
 )
 
+
 EXCEL_FILE_PATH = os.path.join(os.path.dirname(__file__), '../data/operations.xlsx')
+
 
 @pytest.fixture
 def sample_transactions():
@@ -18,6 +20,7 @@ def sample_transactions():
         {"date": "2025-05-03", "amount": 300.00}
     ]
 
+
 def test_read_real_excel_file():
     if not os.path.exists(EXCEL_FILE_PATH):
         pytest.skip(f"Файл {EXCEL_FILE_PATH} не найден")
@@ -25,6 +28,7 @@ def test_read_real_excel_file():
     assert isinstance(transactions, list)
     assert len(transactions) > 0
     assert all("date" in t and "amount" in t for t in transactions)
+
 
 def test_run_with_real_excel_file():
     if not os.path.exists(EXCEL_FILE_PATH):
@@ -35,6 +39,7 @@ def test_run_with_real_excel_file():
     assert "month" in data
     assert "round_limit" in data
     assert "total_round_up" in data
+
 
 def test_read_transactions_success(tmp_path):
     df = pd.DataFrame({
@@ -48,6 +53,7 @@ def test_read_transactions_success(tmp_path):
     assert len(transactions) == 2
     assert transactions[0]["amount"] == 100.0
 
+
 def test_read_transactions_missing_columns(tmp_path):
     df = pd.DataFrame({"wrong_column": [1, 2]})
     test_file = tmp_path / "invalid.xlsx"
@@ -56,20 +62,24 @@ def test_read_transactions_missing_columns(tmp_path):
     transactions = read_transactions_from_excel(str(test_file))
     assert transactions == []
 
+
 def test_investkopilka_normal_case(sample_transactions):
     result = investkopilka("2025-05", sample_transactions, 10)
     data = json.loads(result)
     assert data["total_round_up"] == 1.25  # 0.50 + 0.75
+
 
 def test_investkopilka_empty_transactions():
     result = investkopilka("2025-05", [], 10)
     data = json.loads(result)
     assert data["total_round_up"] == 0
 
+
 def test_investkopilka_invalid_data():
     transactions = [{"date": "invalid", "amount": "text"}]
     result = investkopilka("2025-05", transactions, 10)
     assert "error" in json.loads(result)
+
 
 def test_run_invest_savings_success(tmp_path):
     df = pd.DataFrame({
@@ -82,6 +92,7 @@ def test_run_invest_savings_success(tmp_path):
     result = run_invest_savings(str(test_file), "2025-05", 10)
     data = json.loads(result)
     assert data["total_round_up"] == 1.25
+
 
 def test_run_invest_savings_invalid_path():
     result = run_invest_savings("nonexistent.xlsx", "2025-05", 10)

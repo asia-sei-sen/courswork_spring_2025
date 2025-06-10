@@ -6,6 +6,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 def spending_by_weekday(df: pd.DataFrame, category: str, start_date: str = None) -> str:
     """
     Отчёт: средние траты по дням недели за последние 3 месяца от start_date (или текущей даты).
@@ -20,7 +21,10 @@ def spending_by_weekday(df: pd.DataFrame, category: str, start_date: str = None)
 
         period_start = current_date - timedelta(days=90)  # последние 3 месяца
 
-        logger.info(f"Формируем отчет по категории '{category}' за период {period_start.date()} - {current_date.date()}")
+        logger.info(
+            f"Формируем отчет по категории '{category}' за период "
+            f"{period_start.date()} - {current_date.date()}"
+        )
 
         # Фильтрация по дате и категории
         df['date'] = pd.to_datetime(df['date'])

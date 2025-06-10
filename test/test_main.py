@@ -2,8 +2,10 @@ import builtins
 import pytest
 from src import main
 
+
 def test_main_function_exists():
     assert callable(main.main)
+
 
 @pytest.mark.parametrize("inputs", [
     ("4\n"),  # Неверный выбор — проверка выхода из main
