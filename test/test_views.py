@@ -1,9 +1,11 @@
-from views import main_page_data
 import json
 
-def test_main_page_data():
+from views import main_page_view
+
+
+def test_main_page_view():
     input_date = "2025-06-07 09:30:00"
-    result_json = main_page_data(input_date)
+    result_json = main_page_view(input_date)
     assert isinstance(result_json, str)
 
     result = json.loads(result_json)

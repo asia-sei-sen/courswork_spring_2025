@@ -1,18 +1,7 @@
 [flake8]
-max-line-length = 120
-ignore = E203, W503, E501, D107
-select = F, B, C90, I
+max-line-length = 119
 exclude =
     .git,
     __pycache__,
-    .venv,
-    .mypy_cache,
-    .pytest_cache,
-    venv,
-    migrations,
-    docs,
-    build,
-    dist,
-per-file-ignores =
-    tests/*:S101,
-    **/migrations/*:ALL
+    .venv1,
+    migrations

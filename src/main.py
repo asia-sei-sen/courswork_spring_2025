@@ -1,13 +1,15 @@
 import logging
 from datetime import datetime
 
-from invest_savings import run_invest_savings
-from views import main_page_view
-from reports import spending_by_weekday
 import pandas as pd
+
+from invest_savings import run_invest_savings
+from reports import spending_by_weekday
+from views import main_page_view
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
 
 def main():
     print("Выберите модуль:")
@@ -34,13 +36,14 @@ def main():
         category = input("Введите категорию (например, 'еда'): ")
         date_input = input("Введите дату отсчёта (YYYY-MM-DD) или оставьте пустым для текущей: ").strip()
 
-        df = pd.read_excel(file_path, engine='openpyxl')
+        df = pd.read_excel(file_path, engine="openpyxl")
         start_date = datetime.strptime(date_input, "%Y-%m-%d") if date_input else None
         result = spending_by_weekday(df, category, start_date)
         print(result)
 
     else:
         print("Неверный выбор.")
+
 
 if __name__ == "__main__":
     main()
